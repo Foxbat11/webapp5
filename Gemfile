@@ -25,6 +25,27 @@ gem 'jbuilder', '~> 2.7'
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
 
+#using Open AI to generate code
+gem 'openai'
+require "openai"
+
+require "openai"
+
+#openai_client = OpenAI::Client.new(api_key: ENV.fetch("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"), default_engine: "ada")
+
+# List Engines
+#openai_client.engines
+
+# Retrieve Engine
+#openai_client.engine("babbage")
+
+# Search
+#openai_client.search(documents: ["White House", "hospital", "school"], query: "the president")
+
+# Create Completion
+#openai_client.completions(prompt: "Once upon a time", max_tokens: 5)
+
+
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.4.4', require: false
 
